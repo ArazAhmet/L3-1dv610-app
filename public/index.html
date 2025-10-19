@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Metric Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Code Metric Analyzer</h1>
+      <p>Analysera språkfördelning i GitHub-repositories</p>
+    </header>
+
+    <main>
+      <section class="input-section">
+        <form id="analyzeForm">
+          <label for="repoUrl">GitHub Repository URL</label>
+          <input
+            type="text"
+            id="repoUrl"
+            name="repoUrl"
+            placeholder="https://github.com/username/repository"
+            required
+          >
+          <button type="submit">Analysera</button>
+        </form>
+      </section>
+
+      <section class="loading-section" id="loadingSection" hidden>
+        <div class="spinner"></div>
+        <p>Analyserar repository...</p>
+      </section>
+
+      <section class="results-section" id="resultsSection" hidden>
+        <h2>Resultat</h2>
+        <div id="totalSize" class="total-size"></div>
+        <div id="languageList" class="language-list"></div>
+      </section>
+
+      <section class="error-section" id="errorSection" hidden>
+        <div class="error-message" id="errorMessage"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Använder <a href="https://github.com/ArazAhmet/L2-1dv610" target="_blank">code-metric-analyzer</a></p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
