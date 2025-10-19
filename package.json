@@ -1,0 +1,31 @@
+{
+  "name": "l3-1dv610-app",
+  "version": "1.0.0",
+  "description": "Web application for analyzing programming language distribution in GitHub repositories",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArazAhmet/L3-1dv610-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ArazAhmet/L3-1dv610-app/issues"
+  },
+  "homepage": "https://github.com/ArazAhmet/L3-1dv610-app#readme",
+  "dependencies": {
+    "code-metric-analyzer": "github:ArazAhmet/L2-1dv610#L3-app",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
