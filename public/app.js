@@ -16,7 +16,7 @@ form.addEventListener('submit', async (e) => {
   loadingSection.hidden = false
 
   try {
-    const response = await fetch('http://localhost:3000/api/analyze', {
+    const response = await fetch('/api/analyze', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
